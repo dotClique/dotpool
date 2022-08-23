@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  dotpool:
+    build: .
+    image: dotpool:latest
+    container_name: dotpool
+    networks:
+      - reverse-proxy
+
+networks:
+  reverse-proxy:
+    external: true

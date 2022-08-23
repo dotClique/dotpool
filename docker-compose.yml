@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  dotpool:
+    build:
+      context: ./
+      target: install
+    image: dotpool_dev:latest
+    container_name: dotpool_dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./src/:/app/src/:ro"
+      - "./public/:/app/public/:ro"
+      - "./index.html:/app/index.html:ro"
+      - "./package.json:/app/package.json:ro"
+      - "./tsconfig.json:/app/tsconfig.json:ro"
+      - "./tsconfig.node.json:/app/tsconfig.node.json:ro"
+      - "./vite.config.ts:/app/vite.config.ts:ro"
+      - "./yarn.lock:/app/yarn.lock:ro"
+      - "/app/node_modules"
