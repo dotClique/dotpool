@@ -1,6 +1,6 @@
 # dotPool
 
-*Billiard game for the web, using 3D heads*
+_Billiard game for the web, using 3D heads_
 
 ## Development
 
@@ -8,6 +8,12 @@ Install dependencies:
 
 ```shell
 yarn
+```
+
+Prepare project for development (installs pre-commit hooks):
+
+```shell
+yarn prepare
 ```
 
 Run using hot reload:
