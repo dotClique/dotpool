@@ -27,8 +27,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  place-items: center;
 }
 
 h1 {
@@ -66,4 +68,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#gamecontainer {
+  width: 85vw;
+  display: block;
 }
